@@ -6,7 +6,6 @@ let mode = process.env.NODE_ENV === "production" ? "production" : "development";
 module.exports = {
   mode,
   output: {
-    filename: "[name].[contenthash].js",
     assetModuleFilename: "assets/[hash][ext][query]",
     clean: true,
   },
@@ -14,22 +13,12 @@ module.exports = {
     watchFiles: ["./src/*.html"],
   },
   devtool: "source-map",
-  optimization: {
-    splitChunks: {
-      chunks: "all",
-    }
-  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",
     }),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
-      filename: "index.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/library.html",
-      filename: "library.html",
     }),
   ],
   module: {
@@ -70,16 +59,6 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: "asset/resource",
       },
-      {
-        test: /\.m?js$/i,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"],
-          }
-        }
-      }
     ],
   },
 }
