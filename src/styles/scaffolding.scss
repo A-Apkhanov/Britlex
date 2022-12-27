@@ -2,6 +2,8 @@
 
 html {
   height: 100%;
+
+  font-size: 16px;
 }
 
 body {
@@ -14,6 +16,9 @@ body {
   background-color: $color--bg_light;
 
   font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 a {
