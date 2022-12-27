@@ -1,0 +1,30 @@
+@use "ds-system/ds-colors" as *;
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+
+  color: $color--text;
+  background-color: $color--bg_light;
+
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
