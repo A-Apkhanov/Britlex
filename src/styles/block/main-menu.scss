@@ -1,0 +1,15 @@
+@use "../ds-system/ds-colors" as *;
+@use "../mixins/m_clear-list" as *;
+
+.main-menu {
+  &_list {
+    @include clear-list;
+
+    display: flex;
+    gap: 40px
+  }
+
+  &_link {
+    color: $color--text_dark;
+  }
+}
