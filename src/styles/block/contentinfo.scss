@@ -1,0 +1,34 @@
+@use "../mixins/m_clear-list" as *;
+@use "../ds-system/ds-colors" as *;
+
+.contentinfo {
+  &_list {
+    @include clear-list;
+
+    display: flex;
+  }
+
+  &_item {
+    display: flex;
+    align-items: center;
+  }
+
+  &_item::after {
+    content: "";
+    display: inline-block;
+    margin: 0 10px;
+    background-color: $color--text;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+
+  &_item:last-child:after {
+    display: none;
+  }
+
+  &_link {
+    font-size: clamp(0.69rem, calc(0.48rem + 1.02vw), 1.50rem);
+    color: $color--text;
+  }
+}
