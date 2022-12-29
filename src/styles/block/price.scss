@@ -1,0 +1,22 @@
+@use "../ds-system/ds-colors" as *;
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  padding: 5px 0;
+
+  background-color: $color--bg;
+  border-radius: 5px;
+
+  &_text {
+    font-size: clamp(1.13rem, calc(0.94rem + 0.94vw), 1.88rem);
+    color: $color--text_dark;
+  }
+
+  &_sup {
+    font-size: clamp(0.88rem, calc(0.81rem + 0.31vw), 1.13rem);
+  }
+}
