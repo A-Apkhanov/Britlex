@@ -4,6 +4,9 @@
 @use "scaffolding.scss";
 @use "fonts.scss";
 
+//layouts
+@use "layout/container.scss";
+
 //blocks
 @use "block/button.scss";
 @use "block/form.scss";
