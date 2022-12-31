@@ -10,6 +10,7 @@
   }
 
   &_link {
+    font-size: clamp(1.00rem, calc(0.88rem + 0.63vw), 1.50rem);
     color: $color--text_dark;
   }
 }
