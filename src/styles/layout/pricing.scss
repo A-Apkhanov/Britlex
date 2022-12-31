@@ -1,0 +1,15 @@
+@use "../mixins/m_clear-list" as *;
+
+.pricing {
+  &_title.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  &_price-list {
+    @include clear-list;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+  }
+}
