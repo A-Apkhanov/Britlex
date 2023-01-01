@@ -3,12 +3,24 @@
 .skill-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 
   padding: 44px;
 
   background-color: $color--skill-bg;
   border-radius: 10px;
+
+  &_cover {
+    display: flex;
+  }
+
+
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 1 auto;
+  }
 
   &_title {
     margin: 0;
@@ -25,5 +37,35 @@
     padding-right: 65px;
     padding-left: 65px;
     margin-top: auto;
+  }
+
+  &_image {
+    width: auto;
+    height: 100%;
+    max-height: 220px;
+    max-width: 100%;
+    margin-left: auto;
+    object-fit: contain;
+  }
+
+  &:first-child &_image {
+    max-height: none;
+  }
+
+  &:nth-child(2) &_cover {
+    justify-content: flex-end;
+  }
+
+  &:last-child {
+    flex-direction: row-reverse;
+  }
+
+  &:last-child &_cover {
+    flex: 1 0 50%;
+  }
+
+  &:nth-child(2) &_cover,
+  &:nth-child(3) &_cover {
+    height: 50%;
   }
 }
