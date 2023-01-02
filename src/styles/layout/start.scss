@@ -4,19 +4,23 @@
 
   &_cover {
     flex: 1 0 49%;
+
+    display: flex;
+    align-items: center;
+
     margin-left: 12%;
   }
 
   &_title.main-title {
-    margin-bottom: 40px;
+    margin-bottom: 8%;
   }
 
   &_message.main-message {
-    margin-bottom: 55px;
+    margin-bottom: 10%;
   }
 
   &_button.button {
-    padding-left: 115px;
-    padding-right: 115px;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
