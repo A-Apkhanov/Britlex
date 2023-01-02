@@ -5,5 +5,7 @@
 
   font-size: clamp(1.50rem, calc(0.88rem + 3.13vw), 4.00rem);
   font-weight: 600;
+  line-height: 1.25;
+
   color: $color--text_dark;
 }

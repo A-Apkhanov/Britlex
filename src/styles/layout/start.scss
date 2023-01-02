@@ -1,0 +1,26 @@
+.start {
+  display: flex;
+  align-items: center;
+
+  &_content {
+
+  }
+
+  &_cover {
+    flex: 1 0 50%;
+    margin-left: 12%;
+  }
+
+  &_title.main-title {
+    margin-bottom: 40px;
+  }
+
+  &_message.main-message {
+    margin-bottom: 40px;
+  }
+
+  &_button.button {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
