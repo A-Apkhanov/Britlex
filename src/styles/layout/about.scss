@@ -6,16 +6,20 @@
 
   &_cover {
     flex: 1 0 37%;
+
+    display: flex;
+    align-items: center;
+
     margin-left: 12%;
   }
 
   &_title.section-title {
-    margin-bottom: 35px;
+    margin-bottom: 5%;
   }
 
   &_message.section-message {
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 9%;
 
     text-align: justify;
   }
