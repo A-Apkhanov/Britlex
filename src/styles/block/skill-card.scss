@@ -13,8 +13,6 @@
     display: flex;
   }
 
-
-
   &_content {
     display: flex;
     flex-direction: column;
@@ -23,14 +21,18 @@
   }
 
   &_title {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
 
     font-size: clamp(1.13rem, calc(0.94rem + 0.94vw), 1.88rem);
     color: $color--text_dark;
   }
 
   &_message {
+    margin-top: 0;
+    margin-bottom: 35px;
     font-size: clamp(0.81rem, calc(0.77rem + 0.23vw), 1.00rem);
+    text-align: justify;
   }
 
   &_button {
@@ -41,8 +43,8 @@
 
   &_image {
     width: auto;
-    height: 100%;
-    max-height: 220px;
+    height: auto;
+    max-height: 230px;
     max-width: 100%;
     margin-left: auto;
     object-fit: contain;
@@ -64,8 +66,8 @@
     flex: 1 0 50%;
   }
 
-  &:nth-child(2) &_cover,
-  &:nth-child(3) &_cover {
-    height: 50%;
+  &:nth-child(2) &_content,
+  &:nth-child(3) &_content {
+    flex: 1 0 50%;
   }
 }
