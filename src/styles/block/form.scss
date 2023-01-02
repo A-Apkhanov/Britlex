@@ -1,10 +1,13 @@
 @use "../ds-system/ds-colors" as *;
 
 .form {
+  width: 100%;
+
   display: flex;
   gap: 12px;
 
   &_email {
+    flex: 1 1 auto;
     border: 1px solid $color--border;
     border-radius: 10px;
     padding: 21px;
@@ -13,7 +16,7 @@
   }
 
   &_submit {
-    padding-left: 82px;
-    padding-right: 82px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
