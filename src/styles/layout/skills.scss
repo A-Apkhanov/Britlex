@@ -1,6 +1,8 @@
 @use "../mixins/m_clear-list" as *;
 
 .skills {
+  margin-top: 50px;
+
   &_title.section-title {
     text-align: center;
     margin-bottom: 55px;
