@@ -46,4 +46,11 @@
       grid-column-end: auto;
     }
   }
+
+  @media (max-width: 480px) {
+    &_skill-list {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto-fill, 1fr);
+    }
+  }
 }

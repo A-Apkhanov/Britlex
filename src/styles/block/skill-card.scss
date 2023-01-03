@@ -73,6 +73,8 @@
   }
 
   @media (max-width: 768px) {
+    padding: 15px;
+
     &_image {
       max-height: 230px;
     }
@@ -99,6 +101,16 @@
 
     &:last-child &_cover {
       flex: 0 1 auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &_cover {
+      flex: 0 1 auto;
+    }
+
+    &_content {
+      flex: 1 0 auto;
     }
   }
 }

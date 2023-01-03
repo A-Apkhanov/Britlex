@@ -49,4 +49,10 @@
       margin-bottom: 35px;
     }
   }
+
+  @media (max-width: 480px) {
+    &_button.button {
+      width: 100%;
+    }
+  }
 }

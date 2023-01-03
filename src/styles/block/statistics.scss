@@ -30,4 +30,11 @@
       flex: 1 1 33%;
     }
   }
+
+  @media (max-width: 480px) {
+    &_list {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
 }

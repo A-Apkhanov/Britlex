@@ -19,4 +19,8 @@
     padding-left: 10%;
     padding-right: 10%;
   }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 }
