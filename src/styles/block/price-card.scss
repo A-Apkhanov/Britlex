@@ -5,6 +5,9 @@
   flex-direction: column;
   align-items: flex-start;
 
+  width: 100%;
+  max-width: 500px;
+
   &_title {
     margin: 0;
 
@@ -34,5 +37,13 @@
   &_image {
     max-height: 100%;
     object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    align-items: center;
+
+    &_message {
+      text-align: center;
+    }
   }
 }

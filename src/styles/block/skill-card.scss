@@ -71,4 +71,34 @@
   &:nth-child(3) &_content {
     flex: 1 0 50%;
   }
+
+  @media (max-width: 768px) {
+    &_image {
+      max-height: 230px;
+    }
+
+    &:first-child &_image {
+      max-height: 230px;
+    }
+
+    &:last-child {
+      flex-direction: column;
+    }
+
+    &:first-child &_content {
+      flex: 1 0 50%;
+    }
+
+    &:last-child &_content {
+      flex: 1 0 50%;
+    }
+
+    &:first-child &_cover {
+      flex: 0 1 auto;
+    }
+
+    &:last-child &_cover {
+      flex: 0 1 auto;
+    }
+  }
 }
