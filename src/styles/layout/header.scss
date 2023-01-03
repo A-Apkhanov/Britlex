@@ -28,12 +28,23 @@
   }
 
   @media (max-width: 768px) {
+    &_logo {
+      flex: 0 1 max(17%, 120px);
+    }
+
     &_menu {
       display: none;
     }
 
     &_button.button {
       display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &.container {
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
   }
 }
