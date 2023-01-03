@@ -11,7 +11,20 @@
   &_price-list {
     @include clear-list;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 60px;
+  }
+
+  @media (max-width: 768px) {
+    &_title.section-title {
+      margin-bottom: 35px;
+    }
+
+    &_price-list {
+      justify-items: center;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 30px;
+    }
   }
 }
