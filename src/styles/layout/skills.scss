@@ -11,46 +11,30 @@
   &_skill-list {
     @include clear-list;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  &_skill:first-child {
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-
-  &_skill:last-child {
-    grid-column-start: 2;
-    grid-column-end: 4;
-  }
-
-  @media (max-width: 768px) {
-    &_title.section-title {
-      margin-bottom: 35px;
-    }
-
+  @media (min-width: 481px) {
     &_skill-list {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: auto auto;
+    }
+  }
+
+  @media (min-width: 769px) {
+    &_skill-list {
+      grid-template-columns: 1fr 1fr 1fr;
     }
 
     &_skill:first-child {
-      grid-row-start: auto;
-      grid-row-end: auto;
+      grid-row-start: 1;
+      grid-row-end: 3;
     }
 
     &_skill:last-child {
-      grid-column-start: auto;
-      grid-column-end: auto;
-    }
-  }
-
-  @media (max-width: 480px) {
-    &_skill-list {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(auto-fill, 1fr);
+      grid-column-start: 2;
+      grid-column-end: 4;
     }
   }
 }
