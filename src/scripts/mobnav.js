@@ -29,6 +29,10 @@ class Header {
       this._isActive = !this._isActive;
       this.toggleActive();
     });
+    this._burger.addEventListener("keypress", () => {
+      this._isActive = !this._isActive;
+      this.toggleActive();
+    });
   }
 
   handleClickLink() {
