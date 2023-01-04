@@ -36,81 +36,44 @@
   }
 
   &_button {
-    padding-right: min(3.5vw, 50px);
-    padding-left: min(3.5vw, 50px);
+    padding-right: min(5vw, 50px);
+    padding-left: min(5vw, 50px);
     margin-top: auto;
   }
 
   &_image {
-    width: auto;
-    height: auto;
-    max-height: min(16vw, 230px);
-    max-width: 100%;
-    margin-left: auto;
     object-fit: contain;
-  }
-
-  &:first-child &_image {
-    max-height: none;
-  }
-
-  &:nth-child(2) &_cover {
-    justify-content: flex-end;
-  }
-
-  &:last-child {
-    flex-direction: row-reverse;
-  }
-
-  &:last-child &_cover {
-    flex: 1 0 50%;
-    align-items: center;
-  }
-
-  &:nth-child(2) &_content,
-  &:nth-child(3) &_content {
-    flex: 1 0 50%;
   }
 
   @media (max-width: 768px) {
     padding: 15px;
-
-    &_image {
-      max-height: 230px;
-    }
-
-    &:first-child &_image {
-      max-height: 230px;
-    }
-
-    &:last-child {
-      flex-direction: column;
-    }
-
-    &:first-child &_content {
-      flex: 1 0 50%;
-    }
-
-    &:last-child &_content {
-      flex: 1 0 50%;
-    }
-
-    &:first-child &_cover {
-      flex: 0 1 auto;
-    }
-
-    &:last-child &_cover {
-      flex: 0 1 auto;
-    }
   }
 
-  @media (max-width: 480px) {
-    &_cover {
-      flex: 0 1 auto;
+  @media (min-width: 769px) {
+    &:last-child {
+      flex-direction: row-reverse;
+      gap: 20px;
     }
 
     &_content {
-      flex: 1 0 auto;
+      flex-basis: 50%;
+      flex-shrink: 0;
+    }
+
+    &:nth-child(2) &_image,
+    &:nth-child(3) &_image {
+      height: auto;
+      width: auto;
+      max-height: min(15vw, 215px);
+      max-width: 100%;
+      margin-left: auto;
+    }
+
+    &:last-child &_image {
+      //height: auto;
+      //width: 100%;
+      //max-width: 100%;
+      //max-height: 100%;
     }
   }
 }
