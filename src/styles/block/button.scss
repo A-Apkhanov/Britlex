@@ -3,29 +3,16 @@
 .button {
   display: inline-block;
   cursor: pointer;
-
-  border: 2px solid $color--border_dark;
-
-  &:hover:not(:active) {
-    border: 2px solid $color--border_dark;
-    background-color: transparent;
-    color: $color--text_dark;
-  }
 }
 
 .button__light {
   border: 2px solid $color--border_dark;
   background-color: $color--bg_light;
   color: $color--text_dark;
-
-  &:hover:not(:active) {
-    border: 2px solid transparent;
-    background-color: $color--bg_dark;
-    color: $color--text_light;
-  }
 }
 
 .button__dark {
+  border: 2px solid $color--border_dark;
   background-color: $color--bg_dark;
   color: $color--text_light;
 }
@@ -56,4 +43,18 @@
   padding: 23px;
 
   font-size: clamp(1.25rem, calc(0.95rem + 1.48vw), 2.25rem);
+}
+
+@media (any-hover: hover) {
+  .button__dark:hover {
+    border: 2px solid $color--border_dark;
+    background-color: transparent;
+    color: $color--text_dark;
+  }
+
+  .button__light:hover {
+    border: 2px solid transparent;
+    background-color: $color--bg_dark;
+    color: $color--text_light;
+  }
 }
