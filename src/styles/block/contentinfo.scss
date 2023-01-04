@@ -32,6 +32,10 @@
     color: $color--text;
   }
 
+  &_link:hover {
+    text-decoration: underline;
+  }
+
   @media (max-width: 480px) {
     &_item::after {
       margin: 0 4px;
