@@ -27,11 +27,11 @@ a {
   text-decoration: none;
 }
 
-h2:target:before {
-  content: "";
+*[id]:before {
   display: block;
-  height: 135px;
+  content: " ";
   margin-top: -135px;
+  height: 135px;
   visibility: hidden;
 }
 

@@ -14,10 +14,10 @@
 </head>
 <body>
 <header class="header container">
-    <a class="header_logo" href="#">
+  <a class="header_logo" href="#">
       <img src="./image/Logo.webp" alt="LOGO" class="logo">
     </a>
-    <nav class="header_menu main-menu">
+  <nav class="header_menu main-menu">
       <ul class="main-menu_list">
         <li class="main-menu_item">
           <a href="#" class="main-menu_link">
@@ -46,9 +46,12 @@
         </li>
       </ul>
     </nav>
-    <a href="#contact" class="header_button button button__light button__size-m">
+  <a href="#contact" class="header_button button button__light button__size-m">
       Let's Talk
     </a>
+  <div class="header_burger burger">
+    <span></span>
+  </div>
 </header>
 <main class="container">
   <section class="start">
@@ -70,8 +73,8 @@
       <img src="./image/Start.webp" alt="Start cover">
     </div>
   </section>
-  <section class="skills">
-    <h2 id="skills" class="skills_title section-title">
+  <section class="skills" id="skills">
+    <h2 class="skills_title section-title">
       Skills
     </h2>
     <ul class="skills_skill-list">
@@ -149,51 +152,53 @@
       </li>
     </ul>
   </section>
-  <section class="about">
-    <div class="about_content">
-      <h2 id="about_us" class="about_title section-title">
-        About Us
-      </h2>
-      <p class="about_message section-message">
-        The model offers a framework for discussing problems related to the user's experience, as well as possible ways
-        and means of solving them. Application development begins at the top level (strategy), where the future software
-        product is described quite abstractly from the point of view of the expectations of both users and the customer.
-      </p>
-      <article class="about_statistics statistics">
-        <ul class="statistics_list">
-          <li class="statistics_item">
-            <strong class="statistics_num">
-              800
-            </strong>
-            <span class="statistics_text">
+  <section class="about" id="about_us">
+    <div class="about_wrapper">
+      <div class="about_content">
+        <h2 class="about_title section-title">
+          About Us
+        </h2>
+        <p class="about_message section-message">
+          The model offers a framework for discussing problems related to the user's experience, as well as possible ways
+          and means of solving them. Application development begins at the top level (strategy), where the future software
+          product is described quite abstractly from the point of view of the expectations of both users and the customer.
+        </p>
+        <article class="about_statistics statistics">
+          <ul class="statistics_list">
+            <li class="statistics_item">
+              <strong class="statistics_num">
+                800
+              </strong>
+              <span class="statistics_text">
             Pupils
           </span>
-          </li>
-          <li class="statistics_item">
-            <strong class="statistics_num">
-              18
-            </strong>
-            <span class="statistics_text">
+            </li>
+            <li class="statistics_item">
+              <strong class="statistics_num">
+                18
+              </strong>
+              <span class="statistics_text">
             Teachers
           </span>
-          </li>
-          <li class="statistics_item">
-            <strong class="statistics_num">
-              6
-            </strong>
-            <span class="statistics_text">
+            </li>
+            <li class="statistics_item">
+              <strong class="statistics_num">
+                6
+              </strong>
+              <span class="statistics_text">
             Foreign languages
           </span>
-          </li>
-        </ul>
-      </article>
-    </div>
-    <div class="about_cover">
-      <img src="./image/About.webp" alt="About cover">
+            </li>
+          </ul>
+        </article>
+      </div>
+      <div class="about_cover">
+        <img src="./image/About.webp" alt="About cover">
+      </div>
     </div>
   </section>
-  <section class="pricing">
-    <h2 id="pricing" class="pricing_title section-title">
+  <section class="pricing" id="pricing">
+    <h2 class="pricing_title section-title">
       Pricing
     </h2>
     <ul class="pricing_price-list">
@@ -244,25 +249,27 @@
       </li>
     </ul>
   </section>
-  <section class="contact">
-    <div class="contact_content">
-      <h2 id="contact" class="contact_title section-title">
-        Contact Us
-      </h2>
-      <p class="contact_message section-message">
-        Discover your current English level by taking our free online English test. Sign up to our newsletter for learning
-        tips and free resources.
-      </p>
-      <form action="" class="contact_form form">
-        <label for="email" class="visually-hidden">Email</label>
-        <input type="email" id="email" placeholder="Enter Your E-mail" class="form_email">
-        <button type="submit" class="form_submit button button__dark button__size-l">
-          Subscribe
-        </button>
-      </form>
-    </div>
-    <div class="contact_cover">
-      <img src="./image/Contact.webp" alt="Contact cover">
+  <section class="contact" id="contact">
+    <div class="contact_wrapper">
+      <div class="contact_content">
+        <h2 class="contact_title section-title">
+          Contact Us
+        </h2>
+        <p class="contact_message section-message">
+          Discover your current English level by taking our free online English test. Sign up to our newsletter for learning
+          tips and free resources.
+        </p>
+        <form action="" class="contact_form form">
+          <label for="email" class="visually-hidden">Email</label>
+          <input type="email" id="email" placeholder="Enter Your E-mail" class="form_email">
+          <button type="submit" class="form_submit button button__dark button__size-l">
+            Subscribe
+          </button>
+        </form>
+      </div>
+      <div class="contact_cover">
+        <img src="./image/Contact.webp" alt="Contact cover">
+      </div>
     </div>
   </section>
 </main>
