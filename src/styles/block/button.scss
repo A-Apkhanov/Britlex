@@ -3,12 +3,26 @@
 .button {
   display: inline-block;
   cursor: pointer;
+
+  border: 2px solid $color--border_dark;
+
+  &:hover:not(:active) {
+    border: 2px solid $color--border_dark;
+    background-color: transparent;
+    color: $color--text_dark;
+  }
 }
 
 .button__light {
   border: 2px solid $color--border_dark;
   background-color: $color--bg_light;
   color: $color--text_dark;
+
+  &:hover:not(:active) {
+    border: 2px solid transparent;
+    background-color: $color--bg_dark;
+    color: $color--text_light;
+  }
 }
 
 .button__dark {
