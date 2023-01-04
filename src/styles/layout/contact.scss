@@ -1,11 +1,11 @@
 .contact {
+  margin: 100px 0;
+
   &_wrapper {
     position: relative;
 
     display: flex;
     flex-direction: row-reverse;
-
-    margin: 100px 0;
   }
 
   &_content {
@@ -33,11 +33,11 @@
   }
 
   @media (max-width: 768px) {
+    margin: 50px 0;
+
     &_wrapper {
       flex-direction: column-reverse;
       align-items: center;
-
-      margin: 50px 0;
     }
 
     &_content {

@@ -16,13 +16,13 @@
   }
 
   &_num {
-    font-size: clamp(1.50rem, calc(1.13rem + 1.88vw), 3.00rem);
+    font-size: clamp(1.50rem, calc(1.06rem + 2.22vw), 3.00rem);
     font-weight: 600;
     color: $color--text_dark;
   }
 
   &_text {
-    font-size: clamp(0.88rem, calc(0.78rem + 0.47vw), 1.25rem);
+    font-size: clamp(0.88rem, calc(0.76rem + 0.56vw), 1.25rem);
   }
 
   @media (max-width: 768px) {
