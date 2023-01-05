@@ -26,6 +26,10 @@
     padding-right: 20%;
   }
 
+  &_title span {
+    display: block;
+  }
+
   @media (max-width: 768px) {
     &_wrapper {
       flex-direction: column-reverse;
@@ -41,8 +45,8 @@
       text-align: center;
     }
 
-    &_title br {
-      display: none;
+    &_title span {
+      display: inline;
     }
 
     &_title.main-title {
