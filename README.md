@@ -1,4 +1,4 @@
-# Britlex langing
+# [Britlex Landing](https://britlex-two.vercel.app/)
 
 Landing page for a foreign language learning school. Responsive and adaptive web page layout with support for tablets and mobile devices.
 
